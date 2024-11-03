@@ -2,6 +2,7 @@
 
 import React, { useEffect,useState } from "react";
 import "./App.css";
+import './modal.css'; 
 import AppointmentForm from "./Components/AppointmentForm";
 import AppointmentList from "./Components/AppointmentList";
 
@@ -58,9 +59,14 @@ const App = () => {
 		setAppointments([]);
 	};
 
+	// Function to toggle the modal
 	const handleViewReminders = () => {
-		setShowAppointments(!showAppointments); // Toggle visibility
-	};
+		setShowAppointments(prevState => !prevState);
+	  };
+
+	const closeModal = () => {
+		setShowAppointments(false);
+	};  
 
 	useEffect(() => {
 		if (Notification.permission !== 'granted') {
@@ -84,13 +90,18 @@ const App = () => {
 
 			{/* Conditionally render the AppointmentList component */}
 			{showAppointments && (
-				<AppointmentList
-				appointments={appointments}
-				deleteAppointment={deleteAppointment}
-				clearAppointments={clearAppointments}
-				editAppointment={editAppointment}
-				/>
-			)}
+				<div className="modal-overlay" onClick={closeModal}>
+				<div className="modal-content" onClick={(e) => e.stopPropagation()}>
+					<span className="close-btn" onClick={closeModal}>&times;</span>
+					<AppointmentList
+					appointments={appointments}
+					deleteAppointment={deleteAppointment}
+					clearAppointments={clearAppointments}
+					editAppointment={editAppointment}
+					/>
+				</div>
+				</div>
+      )}
 		</div>
 	);
 }

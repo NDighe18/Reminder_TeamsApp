@@ -36,9 +36,9 @@ const AppointmentList = ({
 				<thead>
 					<tr>
 						<th>ID</th>
-						<th>Description</th>
+						<th>DESCRIPTION</th>
 						<th>Date-Time</th>
-						<th>Edit-Reminder</th>
+						<th>EDIT REMINDER</th>
 					</tr>
 				</thead>
 				<tbody>
