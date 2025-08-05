@@ -2,8 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 A web app enabling users to add reminders with a specific title or description, along with a date-time.
-## 🚀 Live Demo
-[Click here to view the project](https://reminder-teams-app.vercel.app/)
 
 ## Available Scripts
 
