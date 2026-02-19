@@ -1,7 +1,12 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-A web app enabling users to add reminders with a specific title or description, along with a date-time.
+A React web-app enabling users to add Reminders with a specific title or description, along with a date-time.
+
+### 📋 Reminder Interface and Window-notification Pop-Up
+
+<img width="1920" height="993" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/c2ec779e-f55a-4634-886d-9d52755de73c" />
+<img width="1920" height="944" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/b2d5dd09-3354-49ff-81e4-f5e6919cd7c1" />
 
 ## Available Scripts
 
